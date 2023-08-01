@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+
+<div class="parent">
+    {{#each images}}
+    <div class="div{{inc @index}}">
+        <a href="/deleteImg/{{this}}"><img src="./uploads/{{this}}" alt="Imagen {{this}}" /></a>
+    </div>
+    {{/each}}
+</div>
+<form class="form-otra-img" action="/" method="get">
+    <button class="btn-otra-img" type="submit">Subir otra imagen</button>
+</form>
